@@ -1,17 +1,24 @@
 package jeu;
 
-public class Pion extends Joueur {
-	
-	private String couleur;
-	private String nomPion;
-	private int position;
-	
-	public Pion(String nomJoueur) {
-		super(nomJoueur);
+public class Pion {
+
+	private Couleur couleur;
+	private int position = 0;
+
+	public Pion(Couleur couleurPion) {
+		couleur = couleurPion;
 	}
-	
-	public void changerPosition(int nb_cases) {
+
+	public int getPosition() {
+		return position;
+	}
+
+	public Couleur getCouleur() {
+		return couleur;
+	}
+
+	public void deplacer(int nb_cases) {
 		position = position + nb_cases;
 	}
-	
+
 }
