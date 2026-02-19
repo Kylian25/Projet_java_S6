@@ -29,4 +29,18 @@ public class Joueur {
 			nb_coeurs = 0;
 		}
 	}
+
+	public void ajouterVie(int coeurs) {
+		if (nb_coeurs + coeurs <= 5) {
+			nb_coeurs += coeurs;
+		}
+	}
+
+	public int getNbCoeurs() {
+		return nb_coeurs;
+	}
+
+	public Pion getPion() {
+		return this.pion;
+	}
 }
