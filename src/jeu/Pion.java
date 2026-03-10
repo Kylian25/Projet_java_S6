@@ -21,4 +21,8 @@ public class Pion {
 		position = position + nb_cases;
 	}
 
+	public boolean estDansPlateau(int prochainePosition) {
+		return !(prochainePosition > 30 || prochainePosition < 0);
+	}
+
 }
