@@ -2,7 +2,7 @@ package jeu;
 
 public class Joueur {
 	private String nom;
-	private int nb_coeurs = 5;
+	private int nbCoeurs = 5;
 	private Pion pion;
 
 	public Joueur(String nomJoueur, Pion pionJoueur) {
@@ -19,25 +19,25 @@ public class Joueur {
 	}
 
 	public boolean estEnVie() {
-		return (nb_coeurs > 0);
+		return (nbCoeurs > 0);
 	}
 
 	public void enleverVie(int degats) {
-		if (nb_coeurs - degats > 0) {
-			nb_coeurs -= degats;
+		if (nbCoeurs - degats > 0) {
+			nbCoeurs -= degats;
 		} else {
-			nb_coeurs = 0;
+			nbCoeurs = 0;
 		}
 	}
 
 	public void ajouterVie(int coeurs) {
-		if (nb_coeurs + coeurs <= 5) {
-			nb_coeurs += coeurs;
+		if (nbCoeurs + coeurs <= 5) {
+			nbCoeurs += coeurs;
 		}
 	}
 
 	public int getNbCoeurs() {
-		return nb_coeurs;
+		return nbCoeurs;
 	}
 
 	public Pion getPion() {
