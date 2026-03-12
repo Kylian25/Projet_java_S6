@@ -1,7 +1,7 @@
 package jeu;
 
 public interface IAffichage {
-	void afficherGagnant(Joueur gagnant);
+	void afficherGagnant(String nomGagnant);
 
 	void afficherDebutPartie();
 

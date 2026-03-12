@@ -3,8 +3,8 @@ package jeu;
 public class AffichageJeu implements IAffichage {
 
 	@Override
-	public void afficherGagnant(Joueur gagnant) {
-		System.out.println("Le pirate " + gagnant.getNom() + " a gagné la partie !");
+	public void afficherGagnant(String nomGagnant) {
+		System.out.println("Le pirate " + nomGagnant + " a gagné la partie !");
 
 	}
 

@@ -27,14 +27,14 @@ public class DeroulementJeu {
 			affichage.afficherVie(pirate1.getNom(), pirate1.getNbCoeurs());
 			affichage.afficherFinTourPirate();
 			if (estPartieTerminee(pirate1, pirate2) && (aGagne(pirate1) || !pirate2.estEnVie())) {
-				affichage.afficherGagnant(pirate1);
+				affichage.afficherGagnant(pirate1.getNom());
 			} else if (!estPartieTerminee(pirate1, pirate2)) {
 				jouerTour(pirate2, plateau, affichage, de1, de2, scanner);
 				affichage.afficherPosition(pirate2.getNom(), pirate2.getPion().getPosition());
 				affichage.afficherVie(pirate2.getNom(), pirate2.getNbCoeurs());
 				affichage.afficherFinTourPirate();
 				if (estPartieTerminee(pirate1, pirate2) && (aGagne(pirate2) || !pirate1.estEnVie())) {
-					affichage.afficherGagnant(pirate2);
+					affichage.afficherGagnant(pirate2.getNom());
 				}
 
 			}
