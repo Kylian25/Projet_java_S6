@@ -39,8 +39,9 @@ public class AffichageJeu implements IAffichage {
 	}
 
 	@Override
-	public void deplacementImpossible() {
-		System.out.println("Déplacement impossible car le pion serait hors du plateau");
+	public void deplacementHorsPlateau() {
+		System.out.println("La distance de déplacement dépasse les limites du plateau,"
+				+ " le pion de déplace alors jusqu'à la dernière case et retourne en arrière");
 	}
 
 	@Override
@@ -84,6 +85,17 @@ public class AffichageJeu implements IAffichage {
 	@Override
 	public void afficherFinTourPirate() {
 		System.out.println("\n---------------------------------------------------------------------- \n");
+	}
+	
+	@Override
+	public void avertissementCaseDemiTour() {
+		System.out.println("Vous êtes tombé sur une case DemiTour, votre déplacement est annulé !\n");
+	}
+	
+	@Override
+	public void avertissementCasePlusOuMoins() {
+		System.out.println("Vous êtes tombé sur une case PlusOuMoins, lancez un dé."
+				+ " Faites plus de 3 pour gagner une vie sinon vous en perdez une !\n");
 	}
 
 }

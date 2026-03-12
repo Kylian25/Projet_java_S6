@@ -15,7 +15,7 @@ public interface IAffichage {
 
 	void partieTerminee();
 
-	void deplacementImpossible();
+	void deplacementHorsPlateau();
 
 	void afficherVie(String nomPirate, int nbCoueurs);
 
@@ -32,4 +32,8 @@ public interface IAffichage {
 	void afficherResultatDeCaseSpeciale(String nomPirate, int resultatDe);
 
 	void afficherFinTourPirate();
+
+	void avertissementCaseDemiTour();
+
+	void avertissementCasePlusOuMoins();
 }

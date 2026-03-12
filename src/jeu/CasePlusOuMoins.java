@@ -13,7 +13,7 @@ public class CasePlusOuMoins extends CaseSpeciale {
 			Scanner scanner) {
 
 		int resultatDe;
-
+		affichage.avertissementCasePlusOuMoins();
 		affichage.demanderLancerDeCaseSpeciale(pirate.getNom());
 		scanner.nextLine();
 		resultatDe = de.lancerDe();

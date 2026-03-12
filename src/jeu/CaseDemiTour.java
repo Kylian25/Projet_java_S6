@@ -12,6 +12,7 @@ public class CaseDemiTour extends CaseSpeciale {
 	public void appliquerEffet(int distanceDeDeplacement, De de, Joueur pirate, AffichageJeu affichage,
 			Scanner scanner) {
 
+		affichage.avertissementCaseDemiTour();
 		pirate.deplacerPion(-distanceDeDeplacement);
 		affichage.afficherDeplacement(pirate.getNom(), -distanceDeDeplacement);
 
