@@ -86,12 +86,12 @@ public class AffichageJeu implements IAffichage {
 	public void afficherFinTourPirate() {
 		System.out.println("\n---------------------------------------------------------------------- \n");
 	}
-	
+
 	@Override
 	public void avertissementCaseDemiTour() {
 		System.out.println("Vous êtes tombé sur une case DemiTour, votre déplacement est annulé !\n");
 	}
-	
+
 	@Override
 	public void avertissementCasePlusOuMoins() {
 		System.out.println("Vous êtes tombé sur une case PlusOuMoins, lancez un dé."

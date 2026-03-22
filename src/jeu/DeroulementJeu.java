@@ -78,15 +78,15 @@ public class DeroulementJeu {
 			}
 
 		} else {
-			
-			distanceDeDemiTour = distanceDeplacement-(30-pion.getPosition());
+
+			distanceDeDemiTour = distanceDeplacement - (30 - pion.getPosition());
 			positionAvantRetour = pion.getPosition();
 			affichage.deplacementHorsPlateau();
-			pion.deplacer(30-positionAvantRetour);
-			affichage.afficherDeplacement(pirate.getNom(), 30-positionAvantRetour);
+			pion.deplacer(30 - positionAvantRetour);
+			affichage.afficherDeplacement(pirate.getNom(), 30 - positionAvantRetour);
 			pion.deplacer(-distanceDeDemiTour);
-			affichage.afficherDeplacement(pirate.getNom(), -distanceDeDemiTour );
-			
+			affichage.afficherDeplacement(pirate.getNom(), -distanceDeDemiTour);
+
 		}
 
 	}
