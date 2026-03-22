@@ -19,7 +19,7 @@ public interface IAffichage {
 
 	void afficherVie(String nomPirate, int nbCoueurs);
 
-	void modificationVie(String nomPirate, int Coeur);
+	void modificationVie(String nomPirate, int coeur);
 
 	void modifcationVieImpossible();
 

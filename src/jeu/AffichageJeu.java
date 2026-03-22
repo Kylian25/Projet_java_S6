@@ -50,10 +50,10 @@ public class AffichageJeu implements IAffichage {
 	}
 
 	@Override
-	public void modificationVie(String nomPirate, int Coeur) {
+	public void modificationVie(String nomPirate, int coeur) {
 
 		System.out.println(
-				"La vie du pirate " + nomPirate + " à été affecté par cette case. Effet : " + Coeur + " coeur");
+				"La vie du pirate " + nomPirate + " à été affecté par cette case. Effet : " + coeur + " coeur");
 	}
 
 	@Override
