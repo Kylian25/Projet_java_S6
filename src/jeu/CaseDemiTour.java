@@ -9,7 +9,7 @@ public class CaseDemiTour extends CaseSpeciale {
 	}
 
 	@Override
-	public void appliquerEffet(int distanceDeDeplacement, De de, Joueur pirate, AffichageJeu affichage,
+	public void appliquerEffet(int distanceDeDeplacement, De de, Joueur pirate, IAffichage affichage,
 			Scanner scanner) {
 
 		affichage.avertissementCaseDemiTour();

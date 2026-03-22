@@ -10,7 +10,7 @@ public abstract class CaseSpeciale {
 		numeroCase = positionPlateau;
 	}
 
-	public void appliquerEffet(int distanceDeDeplacement, De de, Joueur pirate, AffichageJeu affichage,
+	public void appliquerEffet(int distanceDeDeplacement, De de, Joueur pirate, IAffichage affichage,
 			Scanner scanner) {
 
 	}

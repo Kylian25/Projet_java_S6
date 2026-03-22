@@ -8,12 +8,12 @@ public class DeroulementJeu {
 
 		De de1 = new De();
 		De de2 = new De();
-		Plateau plateau = new Plateau(25);
+		Plateau plateau = new Plateau(30);
 		Pion pion1 = new Pion(Couleur.ROUGE);
 		Pion pion2 = new Pion(Couleur.BLEU);
 		Joueur pirate1 = new Joueur("Jack Le Borne", pion1);
 		Joueur pirate2 = new Joueur("Bill Jambe de Bois", pion2);
-		AffichageJeu affichage = new AffichageJeu();
+		IAffichage affichage = new AffichageJeu();
 		Scanner scanner = new Scanner(System.in);
 
 		affichage.afficherDebutPartie();
@@ -49,7 +49,7 @@ public class DeroulementJeu {
 				|| pirate2.getPion().getPosition() == 30;
 	}
 
-	public static void jouerTour(Joueur pirate, Plateau plateau, AffichageJeu affichage, De de1, De de2,
+	public static void jouerTour(Joueur pirate, Plateau plateau, IAffichage affichage, De de1, De de2,
 			Scanner scanner) {
 		int resDe1;
 		int resDe2;

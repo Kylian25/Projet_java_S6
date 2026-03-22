@@ -14,8 +14,8 @@ public class Joueur {
 		return nom;
 	}
 
-	public void deplacerPion(int nb_cases) {
-		pion.deplacer(nb_cases);
+	public void deplacerPion(int nbCases) {
+		pion.deplacer(nbCases);
 	}
 
 	public boolean estEnVie() {
