@@ -9,7 +9,7 @@ public interface IAffichage {
 
 	void afficherPosition(String nomJoueur, int position);
 
-	void afficherDeplacement(String nomJoueur, int nb_cases);
+	void afficherDeplacement(String nomJoueur, int nbCases);
 
 	void demandeLancerDes(String nomJoueur);
 

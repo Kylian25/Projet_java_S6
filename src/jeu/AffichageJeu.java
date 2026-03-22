@@ -19,8 +19,8 @@ public class AffichageJeu implements IAffichage {
 	}
 
 	@Override
-	public void afficherDeplacement(String nomJoueur, int nb_cases) {
-		System.out.println("Le pirate " + nomJoueur + " avance de " + nb_cases + " cases.");
+	public void afficherDeplacement(String nomJoueur, int nbCases) {
+		System.out.println("Le pirate " + nomJoueur + " avance de " + nbCases + " cases.");
 	}
 
 	@Override
